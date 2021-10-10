@@ -1,0 +1,414 @@
+body{
+    background-image: linear-gradient(90deg, lightblue, pink);
+    margin:0;
+    padding:0;
+    }
+    #profile_img{
+        cursor: pointer;
+        transition:border 1s,width 1s,height 1s;
+        border-radius:100%;
+    }
+    #profile_img:hover{
+        width:4rem;
+        height:4rem;
+    }
+    .icon{
+        float:left;
+        width:3rem;
+        height:3rem;
+        background-color:grey;
+        border-radius:100%;
+        position: relative;
+        top:-13px;
+    }
+    .corner{
+        width:25rem;
+        height:25rem;
+        background-color:grey;
+        position:fixed;
+        right:0px;
+        bottom:0px;
+        border-radius:100% 0 0 0;
+        opacity: .2;
+        animation-name:popoff;
+        animation-duration:1.5s;
+        animation-iteration-count:1;
+        animation-delay:1s;
+        visibility:hidden;
+        z-index: -1;
+    }
+    @keyframes popoff {
+        from{visibility: hidden;
+            right:-100%;
+        }
+        to{
+            visibility:visible;
+            right:0%;
+        }
+    }
+    .navbar{
+        position: -webkit-sticky;
+        position: sticky;
+        top:0;
+        z-index: 2;
+        padding:2rem;
+        margin-top:1rem;
+        box-shadow:2px 2px 15px grey;
+        background-image: linear-gradient(90deg, pink,lightblue);
+    }
+    .link{
+        color:white;
+        text-decoration:none;
+        transition: all 1s;
+    }
+    .link:hover{
+        color:black;
+    }
+    #home{
+        animation-name: forhome;
+        animation-duration: 1s;
+        animation-iteration-count:1;
+        position:relative;
+        margin-left:5rem;
+    }
+    #about{
+        animation-name: forhome;
+        animation-duration: 1s;
+        animation-iteration-count:1;
+        animation-delay:.2s;
+        position:relative;
+        margin:5rem;
+        visibility:none;
+        visibility:hidden;
+
+
+    }
+    #profile{
+        animation-name: forhome;
+        animation-duration: 1s;
+        animation-iteration-count:1;
+        animation-delay:.4s;
+        position:relative;
+        margin:5rem;
+
+        visibility:hidden;
+
+    }
+    #contact{
+        animation-name: forhome;
+        animation-duration: 1s;
+        animation-iteration-count:1;
+        animation-delay:.6s;
+        position:relative;
+        margin:5rem;
+        visibility:hidden;
+
+
+    }
+    @keyframes forhome {
+        from{
+            visibility:hidden;
+            top:-100px;
+        }
+        to{
+            visibility :visible;
+            top:0px;
+        }
+    }
+    .main_content{
+        box-shadow: 5px 5px 30px 5px skyblue;
+        width: 80%;
+        position: relative;
+        left:10%;
+        text-align: center;
+        height:31rem;
+        background-color: white;
+        margin-top:3rem;
+    }
+    #main_content1{
+        background-color:darkblue;
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    .button{
+        text-decoration: none;
+        padding:.3rem;
+        color: white;
+        background-color:darkslategrey;
+        margin:.5rem;
+        border-radius: 4px;;
+        transition: all 1s;
+        animation-name:anim4;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        position: relative;
+    }
+    @keyframes anim4 {
+        from{
+            top:2rem;
+            opacity: 0;
+            z-index: -1;
+        }
+        90%{
+            top: 2rem;
+            opacity: 0;
+            z-index: -1;
+        }
+        to{
+            top: 0;
+            opacity: 1;
+            z-index: 1;
+        }
+        
+    }
+    .button:hover{
+        color:darkslategrey;
+        background-color: white;
+        border:1px solid darkslategrey;
+        transform:scale(1.1);
+    }
+    p{
+        color:darkslategrey;
+        text-indent: 0ch;
+        text-overflow: clip;
+    }
+    h1{
+        color:white;
+        position: relative;
+        top:29%;
+        animation-name:anim1;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    @keyframes anim1 {
+        0%{
+            left:-200px;
+            opacity: 0;
+        }
+        to{
+
+            left:0%;
+            opacity: 1;
+        }
+    }
+    #hello{
+        color:skyblue;
+        position: relative;
+        left:0rem;
+        top:30%;
+    }
+    #para{
+        position: relative;
+        animation-name: anim2;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+    }
+    @keyframes anim2{
+        from{
+            opacity: 0;
+            top:-4rem;
+        }
+        50%{
+            opacity: 0.1;
+            top: -3rem;
+        }
+        to{
+            z-index: 1;
+            top:0;
+        }
+    }
+    #hello{
+        position: relative;
+        animation-name: anim3;
+        animation-iteration-count: 1;
+        animation-duration: 4s;
+    }
+    @keyframes anim3 {
+        from{
+            left: -5rem;
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+            left: -4;
+        }
+    }
+    #footer{
+        margin:2rem;
+        text-align: center;
+        padding: 10%;
+        height:50rem;
+        overflow: scroll;
+    }
+    .card{
+        width: 11rem;
+        height:15rem;
+        background-color: cadetblue;
+        margin: 1.3rem;
+        float: left;
+        border-radius:5px;
+        box-shadow: 5px 5px 30px 5px grey;
+        transition: all 1s;
+        background-image: linear-gradient(45deg,red,blue);
+    }
+    .card:hover{
+        transform: scale(1.1);
+    }
+    #react_head{
+        transition: all 1s;
+    }
+    hr{
+        transition: all 1s;
+    }
+    #reactjs:hover #react_head{
+        color: black;
+        position: absolute;
+        top: 0px;
+        left: 1px;
+        font-size: 19px;
+        visibility: visible;
+    }
+    #para1{
+        opacity: 0;
+        transition: all 3s;
+        padding: 0px;
+        margin: 0px;
+    }
+    #reactjs:hover #para1{
+        opacity: 1;
+        position: relative;
+        top: 3rem;
+    }
+    @media only screen and (max-width: 500px) {
+        html{
+             font-size: 11px;
+        }
+        #footer{
+            padding:1.5rem;
+            margin: 0ch;
+        }
+        .card{
+            
+            width:14rem;
+            height: 20rem;
+        }
+
+        
+      }
+      @media only screen and (max-width: 377px){
+        .card{
+            width:10rem;
+            height:15rem;
+        }
+    }
+      .learn{
+          padding:0;
+          margin:0;
+          background-color:cadetblue;
+          padding: 5px;
+          border: 0.1px solid black;
+          border-radius: 5px;
+          color:white;
+
+      }
+
+      #pop_off{
+          padding:2rem;
+          width: 40rem;
+          height: 20rem;
+          position: -webkit-sticky;
+          position: fixed;
+          left: 30%;
+          top:200px;
+          z-index: 9999;
+          background-color:black;
+          font-size: 20px;
+          border-radius: 10px;
+          display: none;
+          opacity: 0;
+      }
+      #cross{
+          position: absolute;
+          top:2px;
+          right: 10px;
+          margin: 0;
+          padding: 0;
+          transform: rotate(45deg);
+          cursor: pointer;
+          color:white;
+      }
+      .cover{
+          float: right;
+      }
+      .hireme{
+          border-radius:5px;
+          position: relative;
+          background-color: skyblue;
+          color:white;
+          text-decoration: none;
+          padding-left: 1rem;
+          padding-right:1rem;
+          padding:0.5rem;
+          top:11rem;
+          animation-name: hireme;
+          animation-duration: 2s;
+          animation-iteration-count: 1;
+          animation-delay: 3s;
+          opacity: 0;
+          transition: all 1s;
+      }
+      .hireme:hover{
+          background-color: white;
+          color:blue;
+          border: 1px solid skyblue;
+          box-shadow: 5px 5px 25px 15px skyblue;
+      }
+      @keyframes hireme {
+          from{
+              opacity: 0;
+          }
+          to{
+              opacity: 1;
+          }
+      }
+      #aboutmemain{
+    
+          opacity: 0.6;
+          padding:1rem;
+          height:40rem;
+          animation-name:aboutmain;
+          animation-duration: 1s;
+          overflow: scroll;
+          animation-iteration-count: 1;
+      }
+      .random{
+          color:white;
+          background-color: black;
+          padding:2rem;
+          font-family: cursive;
+          border-radius: 5px;
+      }
+      @keyframes aboutmain {
+          from{
+              opacity:0;
+              transform: scale(0);
+          }
+          80%{
+              opacity: .2;
+              transform: scale(1.1);
+          }
+          
+      }
+      #last{
+          width: 100%;
+          height: 15rem;
+          color:white;
+          background-color:black;
+          opacity: .6;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+      }
+      .follow{
+          border-radius: 5px;
+      }

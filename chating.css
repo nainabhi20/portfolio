@@ -1,0 +1,17 @@
+#chatbox{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
+#messages{
+    width:100%;
+    height:80%;
+    background-color: blue;
+}
+.form{
+    margin:2rem;
+}
+.input{
+    border-radius:5px;
+    padding:5px;
+}
