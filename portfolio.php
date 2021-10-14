@@ -81,6 +81,7 @@ function f2(){
     
 </div>
 <div id="footer">
+    <h2>The Technologies I'm working on</h2>
     <div class="card">
         <img src="reactlogo.jpg" width="100%" height="80%" style="border-radius:5px;"/>
         <p id="react.js" style="font-size:1.5rem;margin:0;padding:0;">React.js<p>

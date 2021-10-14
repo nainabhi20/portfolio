@@ -65,7 +65,7 @@ NIT Kurukshetra. I enjoying
 solving coding, Algorithm Analysis
 and competitive Programming
 </p>
-<p class="random">
+<p class="random1">
 / E D U C A T I O N H I S T O R Y<br/>
 >> National Institute of Technology, Kurukshetra<br/>
 7.8 CGPA up till the 4th semester<br/>
@@ -76,11 +76,16 @@ All India Rank 7793 in Joint Entrance Examination (JEE)
 Main 2019
 </p>
 <p class="random">
-    I am a self confident person, I spend my most of time in devloping my carrier.
+    <i style="color:blue">More about me..</i><br/>
+    I am a self confident person, I spend my most of time in devloping my carrier.<br/>
+    I am a commpetitve programmer enjoying solving challenging coding problem.<br/>
+    CodeChef Rating:- 1654
+    CodeChef profile Link<a href="https://www.codechef.com/users/wbhi_1_nain" style='text-decoration:none; padding:2px; background-color:skyblue; color:white; border-radius:5px;'>Click Here</a>
+
 </p>
 </div>
 <h3>Area I am working in</h3>
-<p class="random">
+<p class="random1">
 / C O M P E T E N C I E S<br/>
 > Proficiency in C/C++<br/>
 > Data Structures<br/>
@@ -112,6 +117,16 @@ Main 2019
     setTimeout(() => {
         document.getElementById("hiring").style.opacity=1;
     }, 5000);
+    setTimeout(() => {
+        var x=document.getElementsByClassName("random");
+        var y=document.getElementsByClassName("random1");
+        for(let i=0;i<x.length;i++){
+            x[i].style.opacity=1;
+        }
+        for(let i=0;i<y.length;i++)
+        y[i].style.opacity=1;
+    }, 3000);
+
     
 </script>
 </body>

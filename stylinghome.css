@@ -388,7 +388,48 @@ body{
           padding:2rem;
           font-family: cursive;
           border-radius: 5px;
+          animation-name:fromleft;
+          animation-duration: 1s;
+          animation-delay: 2s;
+          animation-iteration-count: 1;
+          opacity: 0;
       }
+      .random1{
+        color:white;
+        background-color: black;
+        padding:2rem;
+        font-family: cursive;
+        border-radius: 5px;
+        animation-name:fromright;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-iteration-count: 1;
+        opacity: 0;
+    }
+    @keyframes fromleft {
+        from{
+            transform: translateX(100%);
+        }
+        50%{
+            opacity: .1;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    @keyframes fromright {
+        from{
+            transform: translateX(-100%);
+        }
+        50%{
+            opacity: .1;
+        }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
       @keyframes aboutmain {
           from{
               opacity:0;
